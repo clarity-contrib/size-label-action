@@ -9,14 +9,14 @@ Labels are taken from https://github.com/kubernetes/kubernetes/labels?q=size
 Create a `.github/workflows/size-label.yml` file:
 
 ```yaml
-name: size-label
+name: Assign size label to PR
 on: pull_request
 jobs:
-  size-label:
+  Assign size label to PR:
     runs-on: ubuntu-latest
     steps:
-      - name: size-label
-        uses: "pascalgn/size-label-action@v0.4.3"
+      - name: Assign size label to PR
+        uses: "clarity-contrib/size-label-action@v1.0.0"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 ```
@@ -68,14 +68,14 @@ The default sizes are:
 You can pass your own configuration by passing `sizes`
 
 ```yaml
-name: size-label
+name: Assign size label to PR
 on: pull_request
 jobs:
-  size-label:
+  Assign size label to PR:
     runs-on: ubuntu-latest
     steps:
-      - name: size-label
-        uses: "pascalgn/size-label-action@v0.4.2"
+      - name: Assign size label to PR
+        uses: "clarity-contrib/size-label-action@v1.0.0"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         with:

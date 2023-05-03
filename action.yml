@@ -1,11 +1,11 @@
-name: "Assign size label"
+name: "Assign size label to PR"
 description: "Assign labels based on pull request change sizes"
 inputs:
   sizes:
     description: "Custom size configuration"
     required: false
 runs:
-  using: "node12"
+  using: "node16"
   main: "dist/index.js"
 branding:
   icon: "tag"
